@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:767px){
+body{
+    background-color: rgb(255, 223, 117);
+}
+/* GRILLA CON GRID */
+#grilla{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "formulario formulario formulario"
+        "caribe caribe caribe"
+        "sudamerica sudamerica sudamerica"
+        "europa europa europa"
+        "asia asia asia"
+        "footer footer footer";
+        grid-template-columns: 20% auto 15%;
+        grid-template-rows: 80px 100px 250px 250px 250px 250px auto;
+        height: 100%;
+        gap: 10px;
+        padding: 10px;
+    
+    }
+.border{
+        border: 2px solid black;
+    }
+
+    /* HEADER  */
+header {
+        grid-area: header;
+        background-color: rgb(248, 182, 156);
+     }
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+header nav .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+header nav .menu .logo img{
+    width: 50px;
+}
+header nav .menu .links{
+    display: flex;
+}
+header nav .menu .links a{
+    padding: 10px 20px;
+    color: rgb(170, 54, 0);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+}
+header nav .menu .links a:hover{
+    color: rgb(245, 0, 0);
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+        grid-area: footer;
+        background-color: rgb(248, 182, 156);
+     }
+footer h2{
+    color: rgb(170, 54, 0);
+    font-size: 20px;
+}
+footer input{
+    margin: 5px;
+    background-color: rgb(232, 238, 151);
+}
+footer form .botonEnviar{
+    width: 150px;
+}
+footer div i{
+    color: rgb(170, 54, 0);
+    font-size: 13px;
+}
+
+/* FORMULARIO */
+section#formulario{
+    grid-area: formulario;
+    background-color: rgb(248, 182, 156);
+
+}
+section#formulario input{
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(232, 238, 151);
+
+} 
+section#formulario .boton{
+    width: 150px;
+}
+section#formulario label{
+    color: rgb(170, 54, 0);
+
+}
+/* SECCIONES  */
+
+section#caribe {
+        grid-area: caribe;   
+        background-image: url(imagenes/playa3.png);  
+        background-size: 100% 100%;
+     }
+section#caribe a{
+    font-size: 40px;
+    color: rgb(230, 96, 78);
+    transition: 1s;
+    text-decoration: none;
+
+}
+section#caribe a:hover{
+    cursor: pointer;
+    color: rgb(245, 0, 0);
+    transform: translate(10px);
+
+}
+section#sudamerica {
+        grid-area: sudamerica;   
+        background-image: url(imagenes/sudamerica.png);  
+        background-size: 100% 100%;
+     }
+section#europa {
+    grid-area: europa;
+    background-image: url(imagenes/europa.png);
+    background-size: 100% 100%;
+
+}
+section#asia {
+    grid-area: asia;
+    background-image: url(imagenes/asia.png);
+    background-size: 100% 100%;
+}
+section h1{
+    font-size: 40px;
+    color: rgb(230, 96, 78);
+    transition: 1s;
+
+}
+section h1:hover{
+    cursor: pointer;
+    color: rgb(245, 0, 0);
+    transform: translate(10px);
+}
+}
+
+/* HASTA ACA ES EL DISEÑO PARA CELULAR  */
+
+/* ACA EMPIEZA EL DISEÑO DESKTOP */
+
+@media (min-width:768px){
+    body{
+        background-color: rgb(255, 223, 117);
+    }
+    /* GRILLA CON GRID */
+    #grilla{
+            display: grid;
+            grid-template-areas:
+            "header header header header"
+            "formulario formulario formulario formulario"
+            "caribe caribe sudamerica sudamerica"
+            "europa europa asia asia"
+            "footer footer footer footer";
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 80px 100px 250px 250px 250px auto;
+            height: 100%;
+            gap: 10px;
+            padding: 10px;
+        
+        }
+    .border{
+            border: 2px solid black;
+        }
+    
+        /* HEADER  */
+    header {
+            grid-area: header;
+            background-color: rgb(248, 182, 156);
+         }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+    }
+    header nav .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    header nav .menu .logo img{
+        width: 50px;
+    }
+    header nav .menu .links{
+        display: flex;
+    }
+    header nav .menu .links a{
+        padding: 10px 20px;
+        color: rgb(170, 54, 0);
+        text-decoration: none;
+        font-size: 20px;
+        transition: 1s;
+    }
+    header nav .menu .links a:hover{
+        color: rgb(245, 0, 0);
+        transform: scale(1.2);
+    }
+    
+    /* FOOTER */
+    footer {
+            grid-area: footer;
+            background-color: rgb(248, 182, 156);
+            
+         }
+    footer h2{
+        color: rgb(170, 54, 0);
+        font-size: 20px;
+    }
+    footer input{
+        margin: 5px;
+        background-color: rgb(232, 238, 151);
+    }
+    footer form .botonEnviar{
+        width: 150px;
+    }
+    footer div i{
+        color: rgb(170, 54, 0);
+        font-size: 13px;
+    }
+    
+    /* FORMULARIO */
+    section#formulario{
+        grid-area: formulario;
+        background-color: rgb(248, 182, 156);
+    
+    }
+    section#formulario input{
+        width: 600px;
+        margin: 10px;
+        background-color: rgb(232, 238, 151);
+    
+    } 
+    section#formulario .boton{
+        width: 150px;
+    }
+    section#formulario label{
+        color: rgb(170, 54, 0);
+    
+    }
+    
+    /* SECCIONES  */
+    
+    section#caribe {
+            grid-area: caribe;   
+            background-image: url(imagenes/playa3.png);  
+            background-size: 100% 100%;
+         }
+     section#caribe a{
+             font-size: 40px;
+            color: rgb(230, 96, 78);
+            transition: 1s;
+            text-decoration: none;
+        
+        }
+        section#caribe a:hover{
+            cursor: pointer;
+            color: rgb(245, 0, 0);
+            transform: translate(10px);
+        
+        }
+    section#sudamerica {
+            grid-area: sudamerica;   
+            background-image: url(imagenes/sudamerica.png);  
+            background-size: 100% 100%;
+         }
+    section#europa {
+        grid-area: europa;
+        background-image: url(imagenes/europa.png);
+        background-size: 100% 100%;
+    
+    }
+    section#asia {
+        grid-area: asia;
+        background-image: url(imagenes/asia.png);
+        background-size: 100% 100%;
+    }
+    section h1{
+        font-size: 40px;
+        color: rgb(230, 96, 78);
+        transition: 1s;
+    
+    }
+    section h1:hover{
+        cursor: pointer;
+        color: rgb(245, 0, 0);
+        transform: translate(10px);
+    }
+    }
+
