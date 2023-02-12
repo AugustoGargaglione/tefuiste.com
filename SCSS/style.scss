@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 223, 117);
+}
+.barraDeMenu{
+    background-color: rgb(248, 182, 156);
+    a{
+        padding: 10px 20px;
+        color: rgb(170, 54, 0);
+        text-decoration: none;
+        font-size: 20px;
+        transition: 1s;
+    }
+    img{
+        height: 40px;
+    }
+    }
+#caribe{
+    background-image: url(imagenes/playa3.png);
+    background-size: 100% 100%;
+    height: 300px;
+    width: 500px;
+}
+
