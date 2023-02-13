@@ -186,18 +186,198 @@ section h1{
 /* ACA EMPIEZA EL DISEÑO DESKTOP */
 
     
+@media (min-width:768px){
+    body{
+        background-color: rgb(255, 223, 117);
+    }
+    #grilla{
+        display: grid;
+        grid-template-areas:
+        "header header header header"
+        "formulario formulario formulario formulario"
+        "caribe caribe sudamerica sudamerica"
+        "europa europa asia asia" 
+        "footer footer footer footer";
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 80px 280px 300px 300px auto;
+        height: 100%;
+        gap: 10px;
+        padding: 10px;
     
+    }
+        /* HEADER  */
+    .header{
+        grid-area: header;
+        background-color: rgb(248, 182, 156);
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            margin-top: 15px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+           
+    
+        }
+        img{
+            width: 50px;
+            cursor: pointer;
+            transition: 0.7s;
+            &:hover{
+            
+                    color: rgb(245, 0, 0);
+                    transform: scale(1.4);
+            }
 
+         
+
+        }
+        .links{
+            display: flex;
+           
+        }
+        a{
+            padding: 10px 20px;
+            color: rgb(170, 54, 0);
+            text-decoration: none;
+            font-size: 20px;
+            transition: 1s;  
+        }
+        a:hover{
+            color: rgb(245, 0, 0);
+            transform: scale(1.2);
+        }
+    }
    
     
 
+/* FORMULARIO */
+    
+    .formulario{
+        grid-area: formulario;
+        background-image: url(imagenes/paisaje.png);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        
+        input{
+            width:40%;
+        margin: 5px 5px;
+        background-color: rgb(232, 238, 151);
+
+        }
+        label{
+            color: rgb(170, 54, 0);
+            
+        }
+        
+        select{
+            width:40%;
+            margin: 5px 5px;
+            background-color: rgb(232, 238, 151);
+            cursor: pointer;
+        }
+        .button{
+            height: 50px;
+            width: 40%;
+            padding: 10px;
+            margin: 5px 5px;
+            
+        }
+        .date{
+            width: 290px;
+            cursor:text;
+            margin-left: 8px;
+            border-radius: 5px;
+            height: 30px;
+            
+        }
 
 
+ 
+    }
+    /* SECCIONES  */
+.caribe{
+    grid-area: caribe;   
+    background-image: url(imagenes/playa3.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+  
+    a{
+        font-size: 40px;
+        color: rgb(230, 96, 78);
+        transition: 1s;
+        text-decoration: none;
+    }
+    a:hover{
+        cursor: pointer;
+        color: rgb(245, 0, 0);
+        transform: translate(10px);
+    }
+}
+.sudamerica{
+    grid-area: sudamerica;   
+    background-image: url(imagenes/sudamerica.png);  
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.europa{
+    grid-area: europa;
+    background-image: url(imagenes/europa.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.asia{
+    grid-area: asia;
+    background-image: url(imagenes/asia.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+section h1{
+    font-size: 40px;
+    color: rgb(230, 96, 78);
+    transition: 1s;
+    
+    }
+    section h1:hover{
+    cursor: pointer;
+    color: rgb(245, 0, 0);
+    transform: translate(10px);
+    }
+
+ /* FOOTER */
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(248, 182, 156);
+    display: flex;
+
+    justify-content: space-between;
+    h2{
+        color: rgb(170, 54, 0);
+        font-size: 20px;  
+        margin: 5px 5px;
+    }
+    input{
+        margin: 5px 5px;
+        background-color: rgb(232, 238, 151);
+        width: 400px;
+    }
+    button{
+        width: 150px;
+        margin: 5px 5px;
+    }
+    i{
+        color: rgb(170, 54, 0);
+        font-size: 13px;
+        margin: 5px 5px;
+    }
+}
 
 
-
-
-
-
-
-
+}
