@@ -12,11 +12,14 @@
 </head>
 <body>
     <div id="grilla">
-        <header class="border">
+        <header class="header">
             <nav>
                 <div class="menu">
                     <div class="logo">
-                        <img src="imagenes/logo sin fonfo.png" alt="">
+                        
+                       
+                        <a href="index.html"> <img src="CSS/imagenes/logo sin fonfo.png" alt=""></a>
+
 
                     </div>
                     <div class="links">
@@ -29,61 +32,67 @@
                 </div>
             </nav>
         </header>
-        <section id="formulario" class="border">
+        <section id="formulario" class="formulario">
             <form action="">
-                <input type="text" placeholder="Origen">
-                <input type="text" placeholder="Destino">
-                <label for="Personas">Personas</label>
-                <select name="pasajeros" id="">
+                <input class="form-control" type="text" placeholder="Origen">
+                <input class="form-control" type="text" placeholder="Destino">
+                <select class="form-select">
+                    <option selected>Personas</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
+                <select class="form-select">
+                    <option selected>Habitaciones</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <input type="date" class="date">
+                <input type="date" class="date">
                 <br>
-            </form>
-            <form action="">
-                <input type="date">
-                <input type="date">
-                <input class="boton" type="button" value="Buscar">
+                <button class="btn btn-primary button" type="button">Buscar</button>
 
-            </form>
-        </section>
-        <section id="varaderos">
+            
+         </section>
+       
+        <section class="varaderos" id="varaderos">
             <h1>VARADEROS</h1>
         </section>
-        <section id="playadelcarmen">
+        <section class="playadelcarmen" id="playadelcarmen">
             <h1>PLAYA DEL CARMEN</h1>
         </section>
-        <section id="sanandres">
+        <section class="sanandres" id="sanandres">
             <h1>SAN ANDRES</h1>
         </section>
-        <section id="puntacana">
+        <section class="puntacana" id="puntacana">
             <h1>PUNTA CANA</h1>
         </section>
-        <section id="islamargarita">
+        <section class="islamargarita" id="islamargarita">
             <h1>ISLA MARGARITA</h1>
         </section>
-        <section id="bahamas">
+        <section class="bahamas" id="bahamas">
             <h1>BAHAMAS</h1>
         </section>
-        <footer class="border">
+        <footer id="footer" class="footer">
             <div>
-              <h2>REGISTRATE PARA OBTENER NUESTRAS OFERTAS</h2>
-              <form action="">
-                  <input type="text" placeholder="Nombre">
-                  <input type="text" placeholder="Mail">
-                  <input class="botonEnviar" type="button" value="Enviar">
-              </form>  
-            </div>
-            <div>
-              <h2>REDES SOCIALES</h2>
-              <i class="fa-brands fa-facebook"> FACEBOOK//tefuiste.com</i><br>
-              <i class="fa-brands fa-instagram"> INSTAGRAM//@tefuiste.com</i><br>
-              <i class="fa-brands fa-whatsapp"> WHATSAPP//+598-99454046</i>
-  
-  
-            </div>
+                <h2>REGISTRATE PARA OBTENER NUESTRAS OFERTAS</h2>
+                <form action="">
+                    <input class="form-control" type="text" placeholder="Nombre">
+                    <input class="form-control" type="text" placeholder="Mail">
+                    <button class="btn btn-primary" type="button">Enviar</button>
+                </form>  
+              </div>
+              <div>
+                <h2>REDES SOCIALES</h2>
+                <i class="fa-brands fa-facebook"> FACEBOOK//tefuiste.com</i><br>
+                <i class="fa-brands fa-instagram"> INSTAGRAM//@tefuiste.com</i><br>
+                <i class="fa-brands fa-whatsapp"> WHATSAPP//+598-99454046</i>
+    
+    
+              </div>
   
            
   

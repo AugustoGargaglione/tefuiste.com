@@ -1,0 +1,76 @@
+@import "header";
+@import "formulario";
+@import "footer";
+
+@media (max-widht: 700px){
+    #grilla{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "formulario formulario formulario"
+        "varaderos varaderos varaderos"
+        "playadelcarmen playadelcarmen playadelcarmen"
+        "sanandres sanandres sanandres"
+        "puntacana puntacana puntacana"
+        "islamargarita islamargarita islamargarita"
+        "bahamas bahamas bahamas"
+        "footer footer footer";
+        grid-template-columns: 20% auto 15%;
+        grid-template-rows: 80px auto 280px 280px 280px 280px 280px 280px auto;
+        height: 100%;
+        gap: 10px;
+        padding: 10px;
+    
+    }
+    
+/* SECCIONES  */
+
+.varaderos {
+    grid-area: varaderos;   
+    background-image: url(imagenes/Varaderos.png);  
+    background-size: 100% 100%;
+ }
+
+ .playadelcarmen {
+    grid-area: playadelcarmen;   
+    background-image: url(imagenes/playadelcarmen.png);  
+    background-size: 100% 100%;
+ }
+.sanandres {
+grid-area: sanandres;
+background-image: url(imagenes/sanandres.png);
+background-size: 100% 100%;
+
+}
+.puntacana {
+grid-area: puntacana;
+background-image: url(imagenes/puntacana.png);
+background-size: 100% 100%;
+}
+.islamargarita{
+grid-area: islamargarita;
+background-image: url(imagenes/islamargarita.png);
+background-size: 100% 100%;
+
+}
+.bahamas{
+grid-area: bahamas;
+background-image: url(imagenes/bahamas.png);
+background-size: 100% 100%;
+
+}
+section h1{
+    font-size: 40px;
+    color: rgb(230, 96, 78);
+    transition: 1s;
+    
+    }
+    section h1:hover{
+    cursor: pointer;
+    color: rgb(245, 0, 0);
+    transform: translate(10px);
+    }
+}
+
+
+
