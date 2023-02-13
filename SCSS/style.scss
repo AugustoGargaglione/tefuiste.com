@@ -1,8 +1,11 @@
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 
 @media (max-width:767px){
     body{
@@ -400,3 +403,4 @@ section h1{
 
 
 }
+@import "caribestyle";
