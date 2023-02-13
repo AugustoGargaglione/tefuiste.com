@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 767px) {
+  body {
+    background-color: #ffdf75; }
+  #grilla {
+    display: grid;
+    grid-template-areas: "header header header" "formulario formulario formulario"  "caribe caribe caribe" "sudamerica sudamerica sudamerica" "europa europa europa" "asia asia asia" "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px auto  250px 250px 250px 250px auto;
+    height: 100%;
+    gap: 10px;
+    padding: 10px; }
+  /* HEADER  */
+  .header {
+    grid-area: header;
+    background-color: #f8b69c; }
+    .header nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 15px; }
+    .header .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+    .header img {
+      width: 50px;
+      cursor: pointer;
+      transition: 0.7s; }
+      .header img:hover {
+        color: #f50000;
+        transform: scale(1.4); }
+    .header .links {
+      display: flex; }
+    .header a {
+      padding: 10px 20px;
+      color: #aa3600;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 1s; }
+    .header a:hover {
+      color: #f50000;
+      transform: scale(1.2); }
+  /* FORMULARIO */
+  .formulario {
+    grid-area: formulario; }
+    .formulario input {
+      width: 99%;
+      margin: 5px 5px;
+      background-color: #f8b69c; }
+    .formulario label {
+      color: #aa3600; }
+    .formulario select {
+      width: 99%;
+      margin: 5px 5px;
+      background-color: #f8b69c;
+      cursor: pointer; }
+    .formulario .button {
+      width: 100%;
+      padding: 10px; }
+    .formulario .date {
+      width: 47%;
+      cursor: text;
+      margin-left: 8px; }
+  /* SECCIONES  */
+  .caribe {
+    grid-area: caribe;
+    background-image: url(imagenes/playa3.png);
+    background-size: 100% 100%; }
+    .caribe a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .caribe a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  .sudamerica {
+    grid-area: sudamerica;
+    background-image: url(imagenes/sudamerica.png);
+    background-size: 100% 100%; }
+  .europa {
+    grid-area: europa;
+    background-image: url(imagenes/europa.png);
+    background-size: 100% 100%; }
+  .asia {
+    grid-area: asia;
+    background-image: url(imagenes/asia.png);
+    background-size: 100% 100%; }
+  section h1 {
+    font-size: 40px;
+    color: #e6604e;
+    transition: 1s; }
+  section h1:hover {
+    cursor: pointer;
+    color: #f50000;
+    transform: translate(10px); }
+  /* FOOTER */
+  .footer {
+    grid-area: footer;
+    background-color: #f8b69c; }
+    .footer h2 {
+      color: #aa3600;
+      font-size: 20px; }
+    .footer input {
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      width: 400px; }
+    .footer button {
+      width: 150px; }
+    .footer i {
+      color: #aa3600;
+      font-size: 13px; } }
+
+/* HASTA ACA ES EL DISEÑO PARA CELULAR  */
+/* ACA EMPIEZA EL DISEÑO DESKTOP */
