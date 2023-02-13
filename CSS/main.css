@@ -18,7 +18,8 @@
   /* HEADER  */
   .header {
     grid-area: header;
-    background-color: #f8b69c; }
+    background-color: #f8b69c;
+    width: 100%; }
     .header nav {
       display: flex;
       flex-direction: row;
@@ -50,30 +51,36 @@
       transform: scale(1.2); }
   /* FORMULARIO */
   .formulario {
-    grid-area: formulario; }
+    grid-area: formulario;
+    background-color: #f8b69c;
+    background-size: 100% 100%; }
     .formulario input {
       width: 99%;
       margin: 5px 5px;
-      background-color: #f8b69c; }
+      background-color: #e8ee97; }
     .formulario label {
       color: #aa3600; }
     .formulario select {
       width: 99%;
       margin: 5px 5px;
-      background-color: #f8b69c;
+      background-color: #e8ee97;
       cursor: pointer; }
     .formulario .button {
-      width: 100%;
-      padding: 10px; }
+      width: 99%;
+      padding: 10px;
+      margin: 5px 5px; }
     .formulario .date {
       width: 47%;
       cursor: text;
-      margin-left: 8px; }
+      margin-left: 8px;
+      border-radius: 5px; }
   /* SECCIONES  */
   .caribe {
     grid-area: caribe;
     background-image: url(imagenes/playa3.png);
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
     .caribe a {
       font-size: 40px;
       color: #e6604e;
@@ -86,15 +93,21 @@
   .sudamerica {
     grid-area: sudamerica;
     background-image: url(imagenes/sudamerica.png);
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
   .europa {
     grid-area: europa;
     background-image: url(imagenes/europa.png);
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
   .asia {
     grid-area: asia;
     background-image: url(imagenes/asia.png);
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
   section h1 {
     font-size: 40px;
     color: #e6604e;
@@ -136,15 +149,15 @@
   /* HEADER  */
   .header {
     grid-area: header;
-    background-color: #f8b69c; }
+    background-color: #f8b69c;
+    width: 100%; }
     .header nav {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
       margin-top: 15px; }
     .header .menu {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      justify-items: flex-end; }
     .header img {
       width: 50px;
       cursor: pointer;
@@ -153,7 +166,8 @@
         color: #f50000;
         transform: scale(1.4); }
     .header .links {
-      display: flex; }
+      display: flex;
+      justify-items: flex-end; }
     .header a {
       padding: 10px 20px;
       color: #aa3600;
@@ -170,7 +184,8 @@
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    border-radius: 10px; }
     .formulario input {
       width: 40%;
       margin: 5px 5px;
@@ -198,7 +213,8 @@
     grid-area: caribe;
     background-image: url(imagenes/playa3.png);
     background-size: 100% 100%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    padding: 5px 5px; }
     .caribe a {
       font-size: 40px;
       color: #e6604e;
@@ -212,17 +228,20 @@
     grid-area: sudamerica;
     background-image: url(imagenes/sudamerica.png);
     background-size: 100% 100%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    padding: 5px 5px; }
   .europa {
     grid-area: europa;
     background-image: url(imagenes/europa.png);
     background-size: 100% 100%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    padding: 5px 5px; }
   .asia {
     grid-area: asia;
     background-image: url(imagenes/asia.png);
     background-size: 100% 100%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    padding: 5px 5px; }
   section h1 {
     font-size: 40px;
     color: #e6604e;
