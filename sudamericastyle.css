@@ -1,0 +1,373 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:767px){
+body{
+    background-color: rgb(255, 223, 117);
+}
+/* GRILLA CON GRID */
+#grilla{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "formulario formulario formulario"
+        "riodejaneiro riodejaneiro riodejaneiro"
+        "salta salta salta"
+        "santiagodechile santiagodechile santiagodechile"
+        "galapagos galapagos galapagos"
+        "santamarta santamarta santamarta"
+        "puntadeleste puntadeleste puntadeleste"
+        "footer footer footer";
+        grid-template-columns: 20% auto 15%;
+        grid-template-rows: 80px auto 280px 280px 280px 280px 280px 280px auto;
+        height: 100%;
+        gap: 10px;
+        padding: 10px;
+    
+    }
+
+
+    /* HEADER  */
+    .header {
+        grid-area: header;
+        background-color: #f8b69c;
+        width: 100%; }
+        .header nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 15px; }
+        .header .menu {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center; }
+        .header img {
+          width: 50px;
+          cursor: pointer;
+          transition: 0.7s; }
+          .header img:hover {
+            color: #f50000;
+            transform: scale(1.4); }
+        .header .links {
+          display: flex; }
+        .header a {
+          padding: 10px 20px;
+          color: #aa3600;
+          text-decoration: none;
+          font-size: 20px;
+          transition: 1s; }
+        .header a:hover {
+          color: #f50000;
+          transform: scale(1.2); }
+ /* FORMULARIO */
+ .formulario {
+    grid-area: formulario;
+    background-color: #f8b69c;
+    background-size: 100% 100%; }
+    .formulario input {
+      width: 99%;
+      margin: 5px 5px;
+      background-color: #e8ee97; }
+    .formulario label {
+      color: #aa3600; }
+    .formulario select {
+      width: 99%;
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      cursor: pointer; }
+    .formulario .button {
+      width: 99%;
+      padding: 10px;
+      margin: 5px 5px; }
+    .formulario .date {
+      width: 47%;
+      cursor: text;
+      margin-left: 8px;
+      border-radius: 5px; }
+  /* SECCIONES  */
+
+
+/* SECCIONES  */
+
+.riodejaneiro {
+        grid-area: riodejaneiro;   
+        background-image: url(CSS/imagenes/rio.png);  
+        background-size: 100% 100%;
+        border-radius: 10px;
+        padding: 5px 5px;
+     }
+
+
+.salta {
+        grid-area: salta;   
+        background-image: url(CSS/imagenes/salta.png);  
+        background-size: 100% 100%;
+        border-radius: 10px;
+        padding: 5px 5px;
+     }
+.santiagodechile {
+    grid-area: santiagodechile;
+    background-image: url(CSS/imagenes/santiago.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px;
+
+}
+.galapagos {
+    grid-area: galapagos;
+    background-image: url(CSS/imagenes/galapagos.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.santamarta{
+    grid-area: santamarta;
+    background-image: url(CSS/imagenes/santamarta.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px;
+
+}
+.puntadeleste{
+    grid-area: puntadeleste;
+    background-image: url(CSS/imagenes/puntadeleste.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px;
+
+}
+section h1{
+    font-size: 40px;
+    color: rgb(230, 96, 78);
+    transition: 1s;
+
+}
+section h1:hover{
+    cursor: pointer;
+    color: rgb(245, 0, 0);
+    transform: translate(10px);
+}
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: #f8b69c; }
+    .footer h2 {
+      color: #aa3600;
+      font-size: 20px;
+      margin: 5px 5px;  }
+    .footer input {
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      width: 400px;
+      margin: 5px 5px;  }
+    .footer button {
+      width: 150px;
+      margin: 5px 5px;  }
+    .footer i {
+      color: #aa3600;
+      font-size: 13px;
+      margin: 5px 5px;  } 
+}
+
+/* HASTA ACA ES EL DISEÑO PARA CELULAR  */
+
+/* ACA EMPIEZA EL DISEÑO DESKTOP */
+
+@media (min-width:768px){
+    body{
+        background-color: rgb(255, 223, 117);
+    }
+    /* GRILLA CON GRID */
+    #grilla{
+            display: grid;
+            grid-template-areas:
+            "header header header header"
+            "formulario formulario formulario formulario"
+            "riodejaneiro riodejaneiro salta salta"
+            "santiagodechile santiagodechile galapagos galapagos"
+            "santamarta santamarta puntadeleste puntadeleste"
+            "footer footer footer footer";
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 80px auto 250px 250px 250px auto;
+            height: 100%;
+            gap: 10px;
+            padding: 10px;
+        
+        }
+    
+     /* HEADER  */
+  .header {
+    grid-area: header;
+    background-color: #f8b69c;
+    width: 100%; }
+    .header nav {
+      display: flex;
+      margin-top: 15px; }
+    .header .menu {
+      display: flex;
+      flex-direction: row;
+      justify-items: flex-end; }
+    .header img {
+      width: 50px;
+      cursor: pointer;
+      transition: 0.7s; }
+      .header img:hover {
+        color: #f50000;
+        transform: scale(1.4); }
+    .header .links {
+      display: flex;
+      justify-items: flex-end; }
+    .header a {
+      padding: 10px 20px;
+      color: #aa3600;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 1s; }
+    .header a:hover {
+      color: #f50000;
+      transform: scale(1.2); } /* HEADER  */
+  .header {
+    grid-area: header;
+    background-color: #f8b69c;
+    width: 100%; }
+    .header nav {
+      display: flex;
+      margin-top: 15px; }
+    .header .menu {
+      display: flex;
+      flex-direction: row;
+      justify-items: flex-end; }
+    .header img {
+      width: 50px;
+      cursor: pointer;
+      transition: 0.7s; }
+      .header img:hover {
+        color: #f50000;
+        transform: scale(1.4); }
+    .header .links {
+      display: flex;
+      justify-items: flex-end; }
+    .header a {
+      padding: 10px 20px;
+      color: #aa3600;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 1s; }
+    .header a:hover {
+      color: #f50000;
+      transform: scale(1.2); }
+    /* FORMULARIO */
+  .formulario {
+    grid-area: formulario;
+    background-image: url(css/imagenes/paisaje.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px; }
+    .formulario input {
+      width: 40%;
+      margin: 5px 5px;
+      background-color: #e8ee97; }
+    .formulario label {
+      color: #aa3600; }
+    .formulario select {
+      width: 40%;
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      cursor: pointer; }
+    .formulario .button {
+      height: 50px;
+      width: 40%;
+      padding: 10px;
+      margin: 5px 5px; }
+    .formulario .date {
+      width: 290px;
+      cursor: text;
+      margin-left: 8px;
+      border-radius: 5px;
+      height: 30px; }
+    /* SECCIONES  */
+    
+.riodejaneiro {
+            grid-area: riodejaneiro;   
+            background-image: url(CSS/imagenes/rio.png);  
+            background-size: 100% 100%;
+            border-radius: 10px;
+            padding: 5px 5px;
+         }
+  
+.salta{
+            grid-area: salta;   
+            background-image: url(CSS/imagenes/salta.png);
+            background-size: 100% 100%;
+            border-radius: 10px;
+            padding: 5px 5px;
+         }
+  .santiagodechile {
+        grid-area: santiagodechile;
+        background-image: url(CSS/imagenes/santiago.png);
+        background-size: 100% 100%;
+        border-radius: 10px;
+        padding: 5px 5px;
+    
+    }
+ .galapagos {
+        grid-area: galapagos;
+        background-image: url(CSS/imagenes/galapagos.png);
+        background-size: 100% 100%;
+        border-radius: 10px;
+        padding: 5px 5px;
+    }
+   .santamarta{
+        grid-area: santamarta;
+        background-image: url(CSS/imagenes/santamarta.png);
+        background-size: 100% 100%;
+        border-radius: 10px;
+        padding: 5px 5px;
+    
+    }
+    .puntadeleste {
+        grid-area: puntadeleste;
+        background-image: url(css/imagenes/puntadeleste.png);
+        background-size: 100% 100%;
+        border-radius: 10px;
+        padding: 5px 5px;
+    
+    }
+    section h1{
+        font-size: 40px;
+        color: rgb(230, 96, 78);
+        transition: 1s;
+    
+    }
+    section h1:hover{
+        cursor: pointer;
+        color: rgb(245, 0, 0);
+        transform: translate(10px);
+    }
+     /* FOOTER */
+  .footer {
+    grid-area: footer;
+    background-color: #f8b69c;
+    display: flex;
+    justify-content: space-between; }
+    .footer h2 {
+      color: #aa3600;
+      font-size: 20px; 
+      margin: 5px 5px}
+    .footer input {
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      width: 400px; }
+    .footer button {
+        margin: 5px 5px;
+      width: 150px; }
+    .footer i {
+      color: #aa3600;
+      margin: 5px 5px;
+      font-size: 13px; } }

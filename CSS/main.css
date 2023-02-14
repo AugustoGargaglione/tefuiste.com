@@ -96,18 +96,45 @@
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px; }
+    .sudamerica a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .sudamerica a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
   .europa {
     grid-area: europa;
     background-image: url(imagenes/europa.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px; }
+    .europa a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .europa a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
   .asia {
     grid-area: asia;
     background-image: url(imagenes/asia.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px; }
+    .asia a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .asia a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
   section h1 {
     font-size: 40px;
     color: #e6604e;
@@ -230,18 +257,45 @@
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px; }
+    .sudamerica a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .sudamerica a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
   .europa {
     grid-area: europa;
     background-image: url(imagenes/europa.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px; }
+    .europa a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .europa a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
   .asia {
     grid-area: asia;
     background-image: url(imagenes/asia.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px; }
+    .asia a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .asia a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
   section h1 {
     font-size: 40px;
     color: #e6604e;
