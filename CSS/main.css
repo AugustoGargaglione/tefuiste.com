@@ -1,0 +1,337 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 767px) {
+  body {
+    background-color: #ffdf75; }
+  #grilla {
+    display: grid;
+    grid-template-areas: "header header header"
+ "formulario formulario formulario"
+  "caribe caribe caribe"
+ "sudamerica sudamerica sudamerica"
+ "europa europa europa"
+ "asia asia asia"
+ "footer footer footer";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px auto  250px 250px 250px 250px auto;
+    height: 100%;
+    gap: 10px;
+    padding: 10px; }
+  /* HEADER  */
+  .header {
+    grid-area: header;
+    background-color: #f8b69c;
+    width: 100%; }
+    .header nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 15px; }
+    .header .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+    .header img {
+      width: 50px;
+      cursor: pointer;
+      transition: 0.7s; }
+      .header img:hover {
+        color: #f50000;
+        transform: scale(1.4); }
+    .header .links {
+      display: flex; }
+    .header a {
+      padding: 10px 20px;
+      color: #aa3600;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 1s; }
+    .header a:hover {
+      color: #f50000;
+      transform: scale(1.2); }
+  /* FORMULARIO */
+  .formulario {
+    grid-area: formulario;
+    background-color: #f8b69c;
+    background-size: 100% 100%; }
+    .formulario input {
+      width: 99%;
+      margin: 5px 5px;
+      background-color: #e8ee97; }
+    .formulario label {
+      color: #aa3600; }
+    .formulario select {
+      width: 99%;
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      cursor: pointer; }
+    .formulario .button {
+      width: 99%;
+      padding: 10px;
+      margin: 5px 5px; }
+    .formulario .date {
+      width: 47%;
+      cursor: text;
+      margin-left: 8px;
+      border-radius: 5px; }
+  /* SECCIONES  */
+  .caribe {
+    grid-area: caribe;
+    background-image: url(imagenes/playa3.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .caribe a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .caribe a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  .sudamerica {
+    grid-area: sudamerica;
+    background-image: url(imagenes/sudamerica.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .sudamerica a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .sudamerica a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  .europa {
+    grid-area: europa;
+    background-image: url(imagenes/europa.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .europa a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .europa a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  .asia {
+    grid-area: asia;
+    background-image: url(imagenes/asia.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .asia a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .asia a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  section h1 {
+    font-size: 40px;
+    color: #e6604e;
+    transition: 1s; }
+  section h1:hover {
+    cursor: pointer;
+    color: #f50000;
+    transform: translate(10px); }
+  /* FOOTER */
+  .footer {
+    grid-area: footer;
+    background-color: #f8b69c; }
+    .footer h2 {
+      color: #aa3600;
+      font-size: 20px; }
+    .footer input {
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      width: 400px; }
+    .footer button {
+      width: 150px; }
+    .footer i {
+      color: #aa3600;
+      font-size: 13px; } }
+
+/* HASTA ACA ES EL DISEÑO PARA CELULAR  */
+/* ACA EMPIEZA EL DISEÑO DESKTOP */
+@media (min-width: 768px) {
+  body {
+    background-color: #ffdf75; }
+  #grilla {
+    display: grid;
+    grid-template-areas: "header header header header"
+ "formulario formulario formulario formulario"
+ "caribe caribe sudamerica sudamerica"
+ "europa europa asia asia" 
+ "footer footer footer footer";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 80px 280px 300px 300px auto;
+    height: 100%;
+    gap: 10px;
+    padding: 10px; }
+  /* HEADER  */
+  .header {
+    grid-area: header;
+    background-color: #f8b69c;
+    width: 100%; }
+    .header nav {
+      display: flex;
+      margin-top: 15px; }
+    .header .menu {
+      display: flex;
+      flex-direction: row;
+      justify-items: flex-end; }
+    .header img {
+      width: 50px;
+      cursor: pointer;
+      transition: 0.7s; }
+      .header img:hover {
+        color: #f50000;
+        transform: scale(1.4); }
+    .header .links {
+      display: flex;
+      justify-items: flex-end; }
+    .header a {
+      padding: 10px 20px;
+      color: #aa3600;
+      text-decoration: none;
+      font-size: 20px;
+      transition: 1s; }
+    .header a:hover {
+      color: #f50000;
+      transform: scale(1.2); }
+  /* FORMULARIO */
+  .formulario {
+    grid-area: formulario;
+    background-image: url(imagenes/paisaje.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px; }
+    .formulario input {
+      width: 40%;
+      margin: 5px 5px;
+      background-color: #e8ee97; }
+    .formulario label {
+      color: #aa3600; }
+    .formulario select {
+      width: 40%;
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      cursor: pointer; }
+    .formulario .button {
+      height: 50px;
+      width: 40%;
+      padding: 10px;
+      margin: 5px 5px; }
+    .formulario .date {
+      width: 290px;
+      cursor: text;
+      margin-left: 8px;
+      border-radius: 5px;
+      height: 30px; }
+  /* SECCIONES  */
+  .caribe {
+    grid-area: caribe;
+    background-image: url(imagenes/playa3.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .caribe a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .caribe a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  .sudamerica {
+    grid-area: sudamerica;
+    background-image: url(imagenes/sudamerica.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .sudamerica a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .sudamerica a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  .europa {
+    grid-area: europa;
+    background-image: url(imagenes/europa.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .europa a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .europa a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  .asia {
+    grid-area: asia;
+    background-image: url(imagenes/asia.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 5px 5px; }
+    .asia a {
+      font-size: 40px;
+      color: #e6604e;
+      transition: 1s;
+      text-decoration: none; }
+    .asia a:hover {
+      cursor: pointer;
+      color: #f50000;
+      transform: translate(10px); }
+  section h1 {
+    font-size: 40px;
+    color: #e6604e;
+    transition: 1s; }
+  section h1:hover {
+    cursor: pointer;
+    color: #f50000;
+    transform: translate(10px); }
+  /* FOOTER */
+  .footer {
+    grid-area: footer;
+    background-color: #f8b69c;
+    display: flex;
+    justify-content: space-between; }
+    .footer h2 {
+      color: #aa3600;
+      font-size: 20px;
+      margin: 5px 5px; }
+    .footer input {
+      margin: 5px 5px;
+      background-color: #e8ee97;
+      width: 400px; }
+    .footer button {
+      width: 150px;
+      margin: 5px 5px; }
+    .footer i {
+      color: #aa3600;
+      font-size: 13px;
+      margin: 5px 5px; } }
