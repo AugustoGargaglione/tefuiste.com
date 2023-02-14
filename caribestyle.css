@@ -28,69 +28,6 @@ body{
     
     }
 
-
-    /* HEADER  */
-    .header {
-        grid-area: header;
-        background-color: #f8b69c;
-        width: 100%; }
-        .header nav {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          align-items: center;
-          margin-top: 15px; }
-        .header .menu {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          align-items: center; }
-        .header img {
-          width: 50px;
-          cursor: pointer;
-          transition: 0.7s; }
-          .header img:hover {
-            color: #f50000;
-            transform: scale(1.4); }
-        .header .links {
-          display: flex; }
-        .header a {
-          padding: 10px 20px;
-          color: #aa3600;
-          text-decoration: none;
-          font-size: 20px;
-          transition: 1s; }
-        .header a:hover {
-          color: #f50000;
-          transform: scale(1.2); }
- /* FORMULARIO */
- .formulario {
-    grid-area: formulario;
-    background-color: #f8b69c;
-    background-size: 100% 100%; }
-    .formulario input {
-      width: 99%;
-      margin: 5px 5px;
-      background-color: #e8ee97; }
-    .formulario label {
-      color: #aa3600; }
-    .formulario select {
-      width: 99%;
-      margin: 5px 5px;
-      background-color: #e8ee97;
-      cursor: pointer; }
-    .formulario .button {
-      width: 99%;
-      padding: 10px;
-      margin: 5px 5px; }
-    .formulario .date {
-      width: 47%;
-      cursor: text;
-      margin-left: 8px;
-      border-radius: 5px; }
-  /* SECCIONES  */
-
-
 /* SECCIONES  */
 
 section#varaderos {
@@ -151,28 +88,7 @@ section h1:hover{
     color: rgb(245, 0, 0);
     transform: translate(10px);
 }
-/* FOOTER */
-.footer {
-    grid-area: footer;
-    background-color: #f8b69c; }
-    .footer h2 {
-      color: #aa3600;
-      font-size: 20px;
-      margin: 5px 5px;  }
-    .footer input {
-      margin: 5px 5px;
-      background-color: #e8ee97;
-      width: 400px;
-      margin: 5px 5px;  }
-    .footer button {
-      width: 150px;
-      margin: 5px 5px;  }
-    .footer i {
-      color: #aa3600;
-      font-size: 13px;
-      margin: 5px 5px;  } 
 }
-
 /* HASTA ACA ES EL DISEÑO PARA CELULAR  */
 
 /* ACA EMPIEZA EL DISEÑO DESKTOP */
@@ -199,98 +115,7 @@ section h1:hover{
         
         }
     
-     /* HEADER  */
-  .header {
-    grid-area: header;
-    background-color: #f8b69c;
-    width: 100%; }
-    .header nav {
-      display: flex;
-      margin-top: 15px; }
-    .header .menu {
-      display: flex;
-      flex-direction: row;
-      justify-items: flex-end; }
-    .header img {
-      width: 50px;
-      cursor: pointer;
-      transition: 0.7s; }
-      .header img:hover {
-        color: #f50000;
-        transform: scale(1.4); }
-    .header .links {
-      display: flex;
-      justify-items: flex-end; }
-    .header a {
-      padding: 10px 20px;
-      color: #aa3600;
-      text-decoration: none;
-      font-size: 20px;
-      transition: 1s; }
-    .header a:hover {
-      color: #f50000;
-      transform: scale(1.2); } /* HEADER  */
-  .header {
-    grid-area: header;
-    background-color: #f8b69c;
-    width: 100%; }
-    .header nav {
-      display: flex;
-      margin-top: 15px; }
-    .header .menu {
-      display: flex;
-      flex-direction: row;
-      justify-items: flex-end; }
-    .header img {
-      width: 50px;
-      cursor: pointer;
-      transition: 0.7s; }
-      .header img:hover {
-        color: #f50000;
-        transform: scale(1.4); }
-    .header .links {
-      display: flex;
-      justify-items: flex-end; }
-    .header a {
-      padding: 10px 20px;
-      color: #aa3600;
-      text-decoration: none;
-      font-size: 20px;
-      transition: 1s; }
-    .header a:hover {
-      color: #f50000;
-      transform: scale(1.2); }
-    /* FORMULARIO */
-  .formulario {
-    grid-area: formulario;
-    background-image: url(css/imagenes/paisaje.png);
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10px; }
-    .formulario input {
-      width: 40%;
-      margin: 5px 5px;
-      background-color: #e8ee97; }
-    .formulario label {
-      color: #aa3600; }
-    .formulario select {
-      width: 40%;
-      margin: 5px 5px;
-      background-color: #e8ee97;
-      cursor: pointer; }
-    .formulario .button {
-      height: 50px;
-      width: 40%;
-      padding: 10px;
-      margin: 5px 5px; }
-    .formulario .date {
-      width: 290px;
-      cursor: text;
-      margin-left: 8px;
-      border-radius: 5px;
-      height: 30px; }
+  
     /* SECCIONES  */
     
     section#varaderos {
@@ -362,26 +187,6 @@ section h1:hover{
         color: rgb(245, 0, 0);
         transform: translate(10px);
     }
-     /* FOOTER */
-  .footer {
-    grid-area: footer;
-    background-color: #f8b69c;
-    display: flex;
-    justify-content: space-between; }
-    .footer h2 {
-      color: #aa3600;
-      font-size: 20px; 
-      margin: 5px 5px}
-    .footer input {
-      margin: 5px 5px;
-      background-color: #e8ee97;
-      width: 400px; }
-    .footer button {
-        margin: 5px 5px;
-      width: 150px; }
-    .footer i {
-      color: #aa3600;
-      margin: 5px 5px;
-      font-size: 13px; } }
+    }
 
     
