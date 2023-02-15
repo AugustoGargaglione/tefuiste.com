@@ -57,7 +57,7 @@ body{
 }
 .madrid {
     grid-area: madrid;
-    background-image: url(css/imagenes/madrid.png);
+    background-image: url(CSS/imagenes/madrid.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px;
@@ -159,7 +159,7 @@ section h1:hover{
     }
     .berlin {
         grid-area: berlin;
-        background-image: url(css/imagenes/berlin.png);
+        background-image: url(CSS/imagenes/berlin.png);
         background-size: 100% 100%;
         border-radius: 10px;
         padding: 5px 5px;

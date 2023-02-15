@@ -161,7 +161,7 @@ section h1:hover{
     }
     .puntadeleste {
         grid-area: puntadeleste;
-        background-image: url(css/imagenes/puntadeleste.png);
+        background-image: url(CSS/imagenes/puntadeleste.png);
         background-size: 100% 100%;
         border-radius: 10px;
         padding: 5px 5px;

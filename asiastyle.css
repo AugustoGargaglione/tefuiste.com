@@ -160,7 +160,7 @@ section h1:hover{
     }
  .estambul {
         grid-area: estambul;
-        background-image: url(css/imagenes/estambul.png);
+        background-image: url(CSS/imagenes/estambul.png);
         background-size: 100% 100%;
         border-radius: 10px;
         padding: 5px 5px;

@@ -48,7 +48,7 @@ section#playadelcarmen {
      }
 section#sanandres {
     grid-area: sanandres;
-    background-image: url(css/imagenes/sanandres.png);
+    background-image: url(CSS/imagenes/sanandres.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px;
@@ -56,14 +56,14 @@ section#sanandres {
 }
 section#puntacana {
     grid-area: puntacana;
-    background-image: url(css/imagenes/puntacana.png);
+    background-image: url(CSS/imagenes/puntacana.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px;
 }
 section#islamargarita{
     grid-area: islamargarita;
-    background-image: url(css/imagenes/islamargarita.png);
+    background-image: url(CSS/imagenes/islamargarita.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px;
@@ -71,7 +71,7 @@ section#islamargarita{
 }
 section#bahamas{
     grid-area: bahamas;
-    background-image: url(css/imagenes/bahamas.png);
+    background-image: url(CSS/imagenes/bahamas.png);
     background-size: 100% 100%;
     border-radius: 10px;
     padding: 5px 5px;
@@ -147,7 +147,7 @@ section h1:hover{
          }
     section#sanandres {
         grid-area: sanandres;
-        background-image: url(css/imagenes/sanandres.png);
+        background-image: url(CSS/imagenes/sanandres.png);
         background-size: 100% 100%;
         border-radius: 10px;
         padding: 5px 5px;
@@ -155,14 +155,14 @@ section h1:hover{
     }
     section#puntacana {
         grid-area: puntacana;
-        background-image: url(css/imagenes/puntacana.png);
+        background-image: url(CSS/imagenes/puntacana.png);
         background-size: 100% 100%;
         border-radius: 10px;
         padding: 5px 5px;
     }
     section#islamargarita{
         grid-area: islamargarita;
-        background-image: url(css/imagenes/islamargarita.png);
+        background-image: url(CSS/imagenes/islamargarita.png);
         background-size: 100% 100%;
         border-radius: 10px;
         padding: 5px 5px;
@@ -170,7 +170,7 @@ section h1:hover{
     }
     section#bahamas{
         grid-area: bahamas;
-        background-image: url(css/imagenes/bahamas.png);
+        background-image: url(CSS/imagenes/bahamas.png);
         background-size: 100% 100%;
         border-radius: 10px;
         padding: 5px 5px;
