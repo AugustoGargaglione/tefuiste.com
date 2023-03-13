@@ -25,6 +25,25 @@ body {
     background-color: #f14805;
     color: #ffdf75; }
 
+#footer h2 {
+  font-size: 30px;
+  margin: 10px 10px;
+  color: #f14805; }
+
+#footer input {
+  gap: 10px;
+  background-color: #f14805;
+  color: #ffdf75;
+  margin: 10px 10px; }
+
+#footer button {
+  width: 100%;
+  margin: 10px 10px; }
+
+#footer i {
+  margin: 10px 10px;
+  color: #f14805; }
+
 * {
   box-sizing: border-box;
   margin: 0;
