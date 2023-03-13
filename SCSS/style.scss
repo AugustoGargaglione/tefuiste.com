@@ -1,37 +1,11 @@
-*{
-    box-sizing: border-box;
+@import "header";
+
+*{  box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body{
-    background-color: rgb(255, 223, 117);
-}
-.header{
-    width: 100%;
- color: rgb(241, 72, 5);
-    background-color: rgb(241, 72, 5);
-   a{
-    font-size: 25px;
-    color:rgb(255, 223, 117);
-    transition: 0.8s;
-    &:hover{
-        transform: translateX(5px);
-    }
-   }
-}
-#formulario{
-    padding: 8px;
-    gap: 10px;
-    border-color: brown;
-    input{
-       gap: 10px;
-        background-color: rgb(241, 72, 5);
-        color: rgb(255, 223, 117);
-    
-    }
-    
-}
 
+}
+  
 
 #caribe{
     padding: 10px;
@@ -114,26 +88,4 @@ body{
    
         border-color: rgb(160, 29, 29);
 }
-#footer{
-    h2{
-        font-size: 30px;
-        margin: 10px 10px;
-        color: rgb(241, 72, 5);
-    }
-    input{
-        gap: 10px;
-        background-color: rgb(241, 72, 5);
-        color: rgb(255, 223, 117);
-        margin: 10px 10px;
-    }
-    button{
-        width: 100%;
-       margin: 10px 10px;
-    }
-    i{
-        margin: 10px 10px;
-        color: rgb(241, 72, 5);
-    }
-
-    }
 
