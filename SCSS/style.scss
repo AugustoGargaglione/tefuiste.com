@@ -6,23 +6,124 @@
 body{
     background-color: rgb(255, 223, 117);
 }
-.barraDeMenu{
-    background-color: rgb(248, 182, 156);
-    a{
-        padding: 10px 20px;
-        color: rgb(170, 54, 0);
-        text-decoration: none;
-        font-size: 20px;
-        transition: 1s;
+.header{
+ color: rgb(241, 72, 5);
+    background-color: rgb(241, 72, 5);
+   a{
+    font-size: 25px;
+    color:rgb(255, 223, 117);
+    transition: 0.8s;
+    &:hover{
+        transform: translateX(5px);
     }
-    img{
-        height: 40px;
-    }
-    }
-#caribe{
-    background-image: url(imagenes/playa3.png);
-    background-size: 100% 100%;
-    height: 300px;
-    width: 500px;
+   }
 }
+#formulario{
+    padding: 8px;
+    gap: 10px;
+    border-color: brown;
+    input{
+       gap: 10px;
+        background-color: rgb(241, 72, 5);
+        color: rgb(255, 223, 117);
+    
+    }
+    
+}
+
+
+#caribe{
+    padding: 10px;
+    h5{
+        font-size: 50px;
+        transition: 0.8s;
+        color:rgb(255, 223, 117);
+        &:hover{
+            cursor: pointer;
+            color: rgb(241, 72, 5);
+            transform:translateX(10px)
+            
+        }
+    }
+    
+        border-radius: 10px;
+   
+        border-color: rgb(160, 29, 29);
+    
+}
+   
+#sudamerica{
+    padding: 10px;
+   
+    h5{
+        font-size: 50px;
+        transition: 0.8s;
+        color:rgb(255, 223, 117);
+        &:hover{
+            cursor: pointer;
+            color: rgb(241, 72, 5);
+            transform:translateX(10px)
+            
+        }
+    }
+    
+        border-radius: 10px;
+   
+        border-color: rgb(160, 29, 29);
+    
+}
+#europa{
+    padding: 10px;
+    h5{
+        font-size: 50px;
+        transition: 0.8s;
+        color:rgb(255, 223, 117);
+        &:hover{
+            cursor: pointer;
+            color: rgb(241, 72, 5);
+            transform:translateX(10px)
+            
+        }
+    }
+    
+        border-radius: 10px;
+   
+        border-color: rgb(160, 29, 29);
+    
+}
+#asia{
+    padding: 10px;
+    h5{
+        font-size: 50px;
+        transition: 0.8s;
+        color:rgb(255, 223, 117);
+        &:hover{
+            cursor: pointer;
+            color: rgb(241, 72, 5);
+            transform:translateX(10px)
+            
+        }
+    }
+    
+        border-radius: 10px;
+   
+        border-color: rgb(160, 29, 29);
+}
+#footer{
+    h2{
+        font-size: 30px;
+        margin: 10px 10px;
+
+    }
+    input{
+        gap: 10px;
+        background-color: rgb(241, 72, 5);
+        color: rgb(255, 223, 117);
+        margin: 10px 10px;
+    }
+    button{
+        width: 100%;
+       margin: 10px 10px;
+    }
+    }
 

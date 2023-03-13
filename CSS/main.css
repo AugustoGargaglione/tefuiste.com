@@ -6,19 +6,87 @@
 body {
   background-color: #ffdf75; }
 
-.barraDeMenu {
-  background-color: #f8b69c; }
-  .barraDeMenu a {
-    padding: 10px 20px;
-    color: #aa3600;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 1s; }
-  .barraDeMenu img {
-    height: 40px; }
+.header {
+  color: #f14805;
+  background-color: #f14805; }
+  .header a {
+    font-size: 25px;
+    color: #ffdf75;
+    transition: 0.8s; }
+    .header a:hover {
+      transform: translateX(5px); }
+
+#formulario {
+  padding: 8px;
+  gap: 10px;
+  border-color: brown; }
+  #formulario input {
+    gap: 10px;
+    background-color: #f14805;
+    color: #ffdf75; }
 
 #caribe {
-  background-image: url(imagenes/playa3.png);
-  background-size: 100% 100%;
-  height: 300px;
-  width: 500px; }
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #a01d1d; }
+  #caribe h5 {
+    font-size: 50px;
+    transition: 0.8s;
+    color: #ffdf75; }
+    #caribe h5:hover {
+      cursor: pointer;
+      color: #f14805;
+      transform: translateX(10px); }
+
+#sudamerica {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #a01d1d; }
+  #sudamerica h5 {
+    font-size: 50px;
+    transition: 0.8s;
+    color: #ffdf75; }
+    #sudamerica h5:hover {
+      cursor: pointer;
+      color: #f14805;
+      transform: translateX(10px); }
+
+#europa {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #a01d1d; }
+  #europa h5 {
+    font-size: 50px;
+    transition: 0.8s;
+    color: #ffdf75; }
+    #europa h5:hover {
+      cursor: pointer;
+      color: #f14805;
+      transform: translateX(10px); }
+
+#asia {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #a01d1d; }
+  #asia h5 {
+    font-size: 50px;
+    transition: 0.8s;
+    color: #ffdf75; }
+    #asia h5:hover {
+      cursor: pointer;
+      color: #f14805;
+      transform: translateX(10px); }
+
+#footer h2 {
+  font-size: 30px;
+  margin: 10px 10px; }
+
+#footer input {
+  gap: 10px;
+  background-color: #f14805;
+  color: #ffdf75;
+  margin: 10px 10px; }
+
+#footer button {
+  width: 100%;
+  margin: 10px 10px; }
