@@ -7,6 +7,7 @@ body {
   background-color: #ffdf75; }
 
 .header {
+  width: 100%;
   color: #f14805;
   background-color: #f14805; }
   .header a {
@@ -27,8 +28,7 @@ body {
 
 #caribe {
   padding: 10px;
-  border-radius: 10px;
-  border-color: #a01d1d; }
+  border-radius: 10px solid; }
   #caribe h5 {
     font-size: 50px;
     transition: 0.8s;
@@ -79,7 +79,8 @@ body {
 
 #footer h2 {
   font-size: 30px;
-  margin: 10px 10px; }
+  margin: 10px 10px;
+  color: #f14805; }
 
 #footer input {
   gap: 10px;
@@ -90,3 +91,7 @@ body {
 #footer button {
   width: 100%;
   margin: 10px 10px; }
+
+#footer i {
+  margin: 10px 10px;
+  color: #f14805; }
