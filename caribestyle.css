@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 223, 117);
+}
+.header{
+    
+    color: rgb(241, 72, 5);
+    background-color: rgb(241, 72, 5);
+  
+}
+.header a{
+    font-size: 25px;
+    color:rgb(255, 223, 117);
+    transition: 0.8s;
+ 
+   }
+a:hover{
+        transform: translateX(5px);
+        list-style: none;
+}
+#formulario{
+    padding: 8px;
+    gap: 10px;
+    border-color: brown;
+    
+}
+#formulario input{
+    gap: 10px;
+     background-color: rgb(241, 72, 5);
+     color: rgb(255, 223, 117);
+ 
+ }
+
+#footer h2{   
+    font-size: 30px;
+    margin: 10px 10px;
+    color: rgb(241, 72, 5);
+}
+
+#footer input{
+        gap: 10px;
+        background-color: rgb(241, 72, 5);
+        color: rgb(255, 223, 117);
+        margin: 10px 10px;
+    }
+#footer button{
+        width: 100%;
+       margin: 10px 10px;
+    }
+#footer i{
+        margin: 10px 10px;
+        color: rgb(241, 72, 5);
+    }
+.card{
+transition: 0.8s;
+border-radius: 10px;
+}
+.card:hover{
+cursor: pointer;
+transform: scale(1.08);
+
+}
+
