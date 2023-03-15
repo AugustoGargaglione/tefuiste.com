@@ -25,6 +25,79 @@ body {
     background-color: #f14805;
     color: #ffdf75; }
 
+option {
+  gap: 10px;
+  background-color: #f14805;
+  color: #ffdf75; }
+
+select {
+  color: #f14805; }
+
+#caribe {
+  padding: 10px;
+  border-radius: 10px solid; }
+  #caribe h5 {
+    font-size: 50px;
+    transition: 0.8s; }
+    #caribe h5 a {
+      text-decoration: none;
+      color: #f14805; }
+    #caribe h5:hover {
+      cursor: pointer;
+      color: #ffd500;
+      transform: translateX(10px); }
+
+#sudamerica {
+  padding: 10px; }
+  #sudamerica h5 {
+    font-size: 50px;
+    transition: 0.8s;
+    color: #ffdf75;
+    border-radius: 10px;
+    border-color: #a01d1d; }
+    #sudamerica h5 a {
+      text-decoration: none;
+      color: #f14805; }
+    #sudamerica h5:hover {
+      cursor: pointer;
+      color: #f14805;
+      transform: translateX(10px);
+      color: #ffc21a; }
+
+#europa {
+  padding: 10px; }
+  #europa h5 {
+    font-size: 50px;
+    transition: 0.8s;
+    color: #ffdf75;
+    border-radius: 10px;
+    border-color: #a01d1d; }
+    #europa h5:hover {
+      cursor: pointer;
+      color: #f14805;
+      transform: translateX(10px);
+      color: #fa7414; }
+    #europa h5 a {
+      text-decoration: none;
+      color: #f14805; }
+
+#asia {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #a01d1d; }
+  #asia h5 {
+    font-size: 50px;
+    transition: 0.8s;
+    color: #ffdf75; }
+    #asia h5 a {
+      text-decoration: none;
+      color: #f14805; }
+    #asia h5:hover {
+      cursor: pointer;
+      color: #f14805;
+      transform: translateX(10px);
+      color: #fa7414; }
+
 #footer h2 {
   font-size: 30px;
   margin: 10px 10px;
@@ -43,59 +116,3 @@ body {
 #footer i {
   margin: 10px 10px;
   color: #f14805; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-#caribe {
-  padding: 10px;
-  border-radius: 10px solid; }
-  #caribe h5 {
-    font-size: 50px;
-    transition: 0.8s;
-    color: #ffdf75; }
-    #caribe h5:hover {
-      cursor: pointer;
-      color: #f14805;
-      transform: translateX(10px); }
-
-#sudamerica {
-  padding: 10px;
-  border-radius: 10px;
-  border-color: #a01d1d; }
-  #sudamerica h5 {
-    font-size: 50px;
-    transition: 0.8s;
-    color: #ffdf75; }
-    #sudamerica h5:hover {
-      cursor: pointer;
-      color: #f14805;
-      transform: translateX(10px); }
-
-#europa {
-  padding: 10px;
-  border-radius: 10px;
-  border-color: #a01d1d; }
-  #europa h5 {
-    font-size: 50px;
-    transition: 0.8s;
-    color: #ffdf75; }
-    #europa h5:hover {
-      cursor: pointer;
-      color: #f14805;
-      transform: translateX(10px); }
-
-#asia {
-  padding: 10px;
-  border-radius: 10px;
-  border-color: #a01d1d; }
-  #asia h5 {
-    font-size: 50px;
-    transition: 0.8s;
-    color: #ffdf75; }
-    #asia h5:hover {
-      cursor: pointer;
-      color: #f14805;
-      transform: translateX(10px); }
