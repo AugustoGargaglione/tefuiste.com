@@ -5,99 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b41cedcad6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="sudamericastyle.css">
+    <script src="https://kit.fontawesome.com/b41cedcad6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="caribestyle.css">
     <title>tefuiste.com/sudamerica</title>
 </head>
+
 <body>
-    <div id="grilla">
-        <header class="header">
-            <nav>
-                <div class="menu">
-                    <div class="logo">
-                        
-                       
-                        <a href="index.html"> <img src="CSS/imagenes/logo sin fonfo.png" alt=""></a>
-
-
-                    </div>
-                    <div class="links">
-                        <a href="">PAQUETES</a>
-                        <a href="">VUELOS</a>
-                        <a href="">HOTELES</a>
-                        <a href="">CRUCEROS</a>
-
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <section id="formulario" class="formulario">
-            <form action="">
-                <input class="form-control" type="text" placeholder="Origen">
-                <input class="form-control" type="text" placeholder="Destino">
-                <select class="form-select">
-                    <option selected>Personas</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid header">
+              <a class="navbar-brand" href="index.html">
+               Tefuiste.com
+              </a>
+              <br><br> <br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Paquetes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Vuelos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hoteles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Cruceros</a>
+                </li>
+              </ul>
+          </div> 
+        </nav>
+    </header>
+   
+   <div class="container-fluid">
+    <div class="row" id="formulario">
+        <div class="col-sm-12 col-md-12">
+          <input type="text" class="form-control" placeholder="Origen" aria-label="First name">
+        </div>
+        <div class="col-sm-12 col-md-12">
+          <input type="text" class="form-control" placeholder="Destino" aria-label="Last name">
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <input type="date" class="form-control">
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <input type="date" class="form-control">
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>PERSONAS</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
                 </select>
-                <select class="form-select">
-                    <option selected>Habitaciones</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+          </div>
+          <br><br>
+          <div class="col-sm-12 col-md-6">
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>DORMITORIOS</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
                 </select>
-                <input type="date" class="date">
-                <input type="date" class="date">
-                <br>
-                <button class="btn btn-primary button" type="button">Buscar</button>
 
-            
-         </section>
-       
-        <section class="riodejaneiro" id="riodejaneiro">
-            <h1>RIO DE JANEIRO</h1>
-        </section>
-        <section class="salta" id="salta">
-            <h1>SALTA</h1>
-        </section>
-        <section class="santiagodechile" id="santiagodechile">
-            <h1>SANTIAGO DE CHILE</h1>
-        </section>
-        <section class="galapagos" id="galapagos">
-            <h1>GALAPAGOS</h1>
-        </section>
-        <section class="santamarta" id="santamarta">
-            <h1>SANTA MARTA</h1>
-        </section>
-        <section class="puntadeleste" id="puntadeleste">
-            <h1>PUNTA DEL ESTE</h1>
-        </section>
-        <footer id="footer" class="footer">
-            <div>
-                <h2>REGISTRATE PARA OBTENER NUESTRAS OFERTAS</h2>
-                <form action="">
-                    <input class="form-control" type="text" placeholder="Nombre">
-                    <input class="form-control" type="text" placeholder="Mail">
-                    <button class="btn btn-primary" type="button">Enviar</button>
-                </form>  
-              </div>
-              <div>
-                <h2>REDES SOCIALES</h2>
+          </div>
+
+      </div>
+        <button class="btn btn-primary" type="button">BUSCAR</button>
+    </div>    
+   </div> 
+  
+   <div class="card-group" style="gap: 10px; padding: 20px;">
+    <div class="card" style="border-style: double;border-color: brown;">
+      <img src="SCSS/imagenes/galapagos.png" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgb(247, 155, 42);">
+        <h5 class="card-title">GALAPAGOS</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur modi optio porro hic molestias tenetur sed consequuntur debitis in assumenda beatae tempore natus suscipit, alias veniam? Suscipit, et animi.</p>
+        <p class="card-text"><small class="text-muted">Paquetes all inclusive en base doble</small></p>
+      </div>
+    </div>
+    <div class="card" style="border-style: double;border-color: brown;">
+      <img src="SCSS/imagenes/santiago.png" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgb(247, 155, 42);">
+        <h5 class="card-title">SANTIAGO DE CHILE</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur modi optio porro hic molestias tenetur sed consequuntur debitis in assumenda beatae tempore natus suscipit, alias veniam? Suscipit, et animi.</p>
+        <p class="card-text"><small class="text-muted">Paquetes all inclusive en base doble</small></p>
+      </div>
+    </div>
+    <div class="card" style="border-style: double;border-color: brown;">
+        <img src="SCSS/imagenes/rio.png" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: rgb(247, 155, 42);">
+          <h5 class="card-title">RIO DE JANEIRO</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur modi optio porro hic molestias tenetur sed consequuntur debitis in assumenda beatae tempore natus suscipit, alias veniam? Suscipit, et animi.</p>
+          <p class="card-text"><small class="text-muted">Paquetes all inclusive en base doble</small></p>
+        </div>
+      </div>
+    
+</div>
+<div class="card-group" style="gap: 10px; padding: 20px;">
+    <div class="card" style="border-style: double;border-color: brown;">
+        <img src="SCSS/imagenes/salta.png" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: rgb(247, 155, 42);">
+          <h5 class="card-title">SALTA</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur modi optio porro hic molestias tenetur sed consequuntur debitis in assumenda beatae tempore natus suscipit, alias veniam? Suscipit, et animi.</p>
+          <p class="card-text"><small class="text-muted">Paquetes all inclusive en base doble</small></p>
+        </div>
+      </div>
+      <div class="card" style="border-style: double;border-color: brown;">
+        <img src="SCSS/imagenes//puntadeleste.png" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: rgb(247, 155, 42);">
+          <h5 class="card-title">PUNTA DEL ESTE</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur modi optio porro hic molestias tenetur sed consequuntur debitis in assumenda beatae tempore natus suscipit, alias veniam? Suscipit, et animi.</p>
+          <p class="card-text"><small class="text-muted">Paquetes all inclusive en base doble</small></p>
+        </div>
+      </div>
+      <div class="card" style="border-style: double;border-color: brown;">
+        <img src="SCSS/imagenes/santamarta.png" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: rgb(247, 155, 42);">
+          <h5 class="card-title">SANTA MARTA</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur modi optio porro hic molestias tenetur sed consequuntur debitis in assumenda beatae tempore natus suscipit, alias veniam? Suscipit, et animi.</p>
+          <p class="card-text"><small class="text-muted">Paquetes all inclusive en base doble</small></p>
+        </div>
+      </div>
+    
+ 
+</div>
+    
+ 
+
+   
+    <footer>
+        <div class="row" id="footer">
+            <div class="col-sm-12 col-md-8">
+                <h2>Registrate para recibir nuestras ofertas</h2>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                <input type="text" class="form-control" placeholder="Mail" aria-label="First name">
+                <button type="button" class="btn btn-primary btn-lg">ENVIAR</button>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>Redes sociales</h2>
                 <i class="fa-brands fa-facebook"> FACEBOOK//tefuiste.com</i><br>
                 <i class="fa-brands fa-instagram"> INSTAGRAM//@tefuiste.com</i><br>
                 <i class="fa-brands fa-whatsapp"> WHATSAPP//+598-99454046</i>
-    
-    
-              </div>
-  
-           
-  
-          </footer>
+
+            </div>
+
+        </div>
+    </footer>
+       
     
 </body>
 </html>

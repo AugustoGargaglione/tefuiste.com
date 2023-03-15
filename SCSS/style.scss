@@ -1,232 +1,172 @@
-@import "header";
-@import "footer";
-@import "formulario";
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-@media (max-width:767px){
-    body{
-        background-color: rgb(255, 223, 117);
+body{
+    background-color: rgb(255, 223, 117);
+}
+.header{
+    
+ color: rgb(241, 72, 5);
+    background-color: rgb(241, 72, 5);
+   a{
+    font-size: 25px;
+    color:rgb(255, 223, 117);
+    transition: 0.8s;
+    &:hover{
+        transform: translateX(5px);
     }
-    #grilla{
-        display: grid;
-        grid-template-areas:
-        "header header header"
-        "formulario formulario formulario"
-        
-        "caribe caribe caribe"
-        "sudamerica sudamerica sudamerica"
-        "europa europa europa"
-        "asia asia asia"
-        "footer footer footer";
-        grid-template-columns: auto auto auto;
-        grid-template-rows: 80px auto  250px 250px 250px 250px auto;
-        height: 100%;
-        gap: 10px;
-        padding: 10px;
+   }
+}
+#formulario{
+    padding: 8px;
+    gap: 10px;
+    border-color: brown;
+    input{
+       gap: 10px;
+        background-color: rgb(241, 72, 5);
+        color: rgb(255, 223, 117);
     
     }
-      /* SECCIONES  */
-.caribe{
-    grid-area: caribe;   
-    background-image: url(imagenes/playa3.png);
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-.sudamerica{
-    grid-area: sudamerica;   
-    background-image: url(imagenes/sudamerica.png);  
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-.europa{
-    grid-area: europa;
-    background-image: url(imagenes/europa.png);
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-.asia{
-    grid-area: asia;
-    background-image: url(imagenes/asia.png);
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-section h1{
-    font-size: 40px;
-    color: rgb(230, 96, 78);
-    transition: 1s;
     
-    }
-    section h1:hover{
-    cursor: pointer;
-    color: rgb(245, 0, 0);
-    transform: translate(10px);
-    }
+}
+option{
+    gap: 10px;
+    background-color: rgb(241, 72, 5);
+    color: rgb(255, 223, 117);
+}
+select{
+    color: rgb(241, 72, 5);
 }
 
-
-
-    /* HASTA ACA ES EL DISEÑO PARA CELULAR  */
-
-/* ACA EMPIEZA EL DISEÑO DESKTOP */
-
+#caribe{
+    padding: 10px;
     
-@media (min-width:768px){
-    body{
-        background-color: rgb(255, 223, 117);
-    }
-    #grilla{
-        display: grid;
-        grid-template-areas:
-        "header header header header"
-        "formulario formulario formulario formulario"
-        "caribe caribe sudamerica sudamerica"
-        "europa europa asia asia" 
-        "footer footer footer footer";
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: 80px 280px 300px 300px auto;
-        height: 100%;
-        gap: 10px;
-        padding: 10px;
-    
-    }
-      /* SECCIONES  */
-.caribe{
-    grid-area: caribe;   
-    background-image: url(imagenes/playa3.png);
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
   
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
+    h5{
+        a{
+            text-decoration: none;
+            color: rgb(241, 72, 5);
+        }
+        
+        font-size: 50px;
+        transition: 0.8s;
+        &:hover{
+            cursor: pointer;
+            color: rgb(255, 213, 0);
+            transform:translateX(10px);
+        
+            
+        }
     }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-.sudamerica{
-    grid-area: sudamerica;   
-    background-image: url(imagenes/sudamerica.png);  
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-.europa{
-    grid-area: europa;
-    background-image: url(imagenes/europa.png);
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-.asia{
-    grid-area: asia;
-    background-image: url(imagenes/asia.png);
-    background-size: 100% 100%;
-    border-radius: 10px;
-    padding: 5px 5px;
-    a{
-        font-size: 40px;
-        color: rgb(230, 96, 78);
-        transition: 1s;
-        text-decoration: none;
-    }
-    a:hover{
-        cursor: pointer;
-        color: rgb(245, 0, 0);
-        transform: translate(10px);
-    }
-}
-section h1{
-    font-size: 40px;
-    color: rgb(230, 96, 78);
-    transition: 1s;
     
+        border-radius: 10px solid;
+        
+    
+}
+   
+#sudamerica{
+    padding: 10px;
+    
+   
+    h5{
+       
+        font-size: 50px;
+        transition: 0.8s;
+        color:rgb(255, 223, 117);
+        a {text-decoration: none;
+            color: rgb(241, 72, 5);
     }
-    section h1:hover{
-    cursor: pointer;
-    color: rgb(245, 0, 0);
-    transform: translate(10px);
+        &:hover{
+            cursor: pointer;
+            color: rgb(241, 72, 5);
+            transform:translateX(10px);
+            color: rgb(255, 194, 26);
+            
+        }
+        
+    
+        border-radius: 10px;
+   
+        border-color: rgb(160, 29, 29);
+    
+}
+}
+   
+#europa{
+    padding: 10px;
+   
+    h5{
+        font-size: 50px;
+        transition: 0.8s;
+        color:rgb(255, 223, 117);
+        &:hover{
+            cursor: pointer;
+            color: rgb(241, 72, 5);
+            transform:translateX(10px);
+            color: rgb(250, 116, 20);
+            
+        }
+        a{text-decoration: none;
+            color: rgb(241, 72, 5);
     }
+    
+        border-radius: 10px;
+   
+        border-color: rgb(160, 29, 29);
+    
+}
+}
+   
+#asia{
+    padding: 10px;
+  
+    h5{
+        font-size: 50px;
+        transition: 0.8s;
+        color:rgb(255, 223, 117);
+        a{
+            text-decoration: none;
+            color: rgb(241, 72, 5);
+        }
+        &:hover{
+            cursor: pointer;
+            color: rgb(241, 72, 5);
+            transform:translateX(10px);
+            color: rgb(250, 116, 20);
+            
+            
+        }
+    }
+    
+        border-radius: 10px;
+   
+        border-color: rgb(160, 29, 29);
+}
+
+#footer{
+    h2{
+        font-size: 30px;
+        margin: 10px 10px;
+        color: rgb(241, 72, 5);
+    }
+    input{
+        gap: 10px;
+        background-color: rgb(241, 72, 5);
+        color: rgb(255, 223, 117);
+        margin: 10px 10px;
+    }
+    button{
+        width: 100%;
+       margin: 10px 10px;
+    }
+    i{
+        margin: 10px 10px;
+        color: rgb(241, 72, 5);
+    }
+
+    
 
 }
    
